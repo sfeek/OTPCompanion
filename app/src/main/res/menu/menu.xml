@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_clear"
+        android:title="@string/action_clear"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_copy"
+        android:title="@string/action_copy"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_paste"
+        android:title="@string/action_paste"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/action_help"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

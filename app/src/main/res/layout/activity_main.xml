@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtMessage"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/hintMessage"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:singleLine="false"
+                android:visibility="visible"
+                android:textSize="18sp"
+                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                app:layout_constraintBottom_toTopOf="@+id/txtOTP"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtOTP"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/hintOTP"
+                android:visibility="visible"
+                android:textSize="18sp"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                app:layout_constraintBottom_toTopOf="@+id/txtOutput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+
+            <TextView
+                android:id="@+id/txtOutput"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black"
+                android:textIsSelectable="true"
+                android:textSize="18sp"
+                android:visibility="visible"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOTP" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

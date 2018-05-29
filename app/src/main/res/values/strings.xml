@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OTP Companion</string>
+    <string name="hintMessage">Input</string>
+    <string name="hintOTP">OTP</string>
+    <string name="hintOutput">Output</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_help">Help</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_paste">Paste</string>
+    <string name="help">Enter Message or Cipher text in 1st field.\nEnter One Time Pad text in 2nd field.\nResults appear in 3rd field.\nGreen in 2nd field sufficient OTP text.\nRed in 2nd field insufficient OTP text.</string>
+</resources>
